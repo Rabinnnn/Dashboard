@@ -108,48 +108,71 @@
                         </ol>
                         <div class="row">
   <form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Contractor registration</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Contractor Renewal</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
+    <div class=" row mb-3">
+      <div class="col-md-6">
+          <div class="form-floating mb-3 mb-md-0">
+
+            <input type="number" class="form-control" id="contractorRegistration" aria-describedby="emailHelp" placeholder="Contractor Registration"/>
+            <label for="contractorRegistration" class="required">Contractor registration</label>
+        </div >
+      </div>
+
+      <div class="col-md-6">
+          <div class="form-floating">
+            <input type="number" class="form-control" id="contractorRenewal" aria-describedby="emailHelp" placeholder="Contractor Renewal">
+            <label for="contractorRenewal" class="required">Contractor Renewal</label>
+          </div>
+      </div>
+  </div>
+
+<div class=" row mb-3">
+  <div class="col-md-6">
+    <div class="form-floating mb-3 mb-md-0">
+      <input type="number" class="form-control" id="projectRegistration" aria-describedby="emailHelp" placeholder="Project Registration">
+      <label for="projectRegistration" class="required">Project Registration</label>
     </div>
-<div class="mb-3">
-  <label for="exampleInputEmail1" class="form-label">Project Registration</label>
-  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-floating mb-3 mb-md-0">
+      <input type="number" class="form-control" id="siteSupervisor" aria-describedby="emailHelp" placeholder="Site Supervisor">
+      <label for="siteSupervisor" class="required">Site Supervisor</label>
+    </div>
+  </div>
 </div>
-<div class="mb-3">
-  <label for="exampleInputEmail1" class="form-label">Site Supervisor</label>
-  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+<div class=" row mb-3">
+  <div class="col-md-6">
+    <div class="form-floating mb-3 mb-md-0">
+      <input type="number" class="form-control" id="skilledWorker" aria-describedby="emailHelp" placeholder="Skilled Worker">
+      <label for="skilledWorker" class="required">Skilled Worker</label>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-floating mb-3 mb-md-0">
+      <input type="number" class="form-control" id="generalEnquiry" placeholder="General Enquiry">
+      <label for="generalEnquiry">General Enquiry</label>
+    </div>
+  </div>
 </div>
-<div class="mb-3">
-  <label for="exampleInputEmail1" class="form-label">Skilled Worker</label>
-  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+
+<div class=" row mb-3">
+  <div class="col-md-6">
+    <div class="form-floating mb-3 mb-md-0">
+      <label for="uploadFile"></label>
+      <input type="file" class="form-control" id="uploadFile" name="filename">
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="form-floating mb-3 mb-md-0">
+      <label for="dataEntryDate" class="required"></label>
+      <input type="date" class="form-control" id="dataEntryDate">
+    </div>
+  </div>
 </div>
-<div class="mb-3">
-  <label for="exampleInputEnquiry1" class="form-label">General Enquiry</label>
-  <input type="text" class="form-control" id="exampleInputEnquiry1">
-</div>
-<div class="mb-3">
-  <label for="exampleInputfile1" class="form-label">Click to upload a file</label>
-  <input type="file" class="form-control" id="myFile" name="filename">
-</div>
-<div class="mb-3">
-  <label for="exampleInputDate1" class="form-label">Date</label>
-  <input type="date" class="form-control" id="exampleInputPassword1">
-</div>
-<!-- <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Date</label>
-<select class="form-select" aria-label="Default select example">
-  <option selected></option>
-  <option value="1">Contractor</option>
-  <option value="2">Site Supervisor</option>
-  <option value="3">Skilled Worker</option>
-</select></div> -->
+
 
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
