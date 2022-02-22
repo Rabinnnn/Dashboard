@@ -105,7 +105,14 @@ CREATE TABLE `tblprojects` (
 --
 
 CREATE TABLE `user` (
-  `user_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `first_name` text(11) NOT NULL,
+  `last_name` text(11) NOT NULL,
+  `payroll_no` text(11) NOT NULL,
+  `region` text(11) NOT NULL
+  `role` text(11) NOT NULL
+  `password` text(11) NOT NULL
+  `confirm_password` text(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
