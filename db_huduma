@@ -1,0 +1,141 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 21, 2022 at 10:51 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `db_huduma`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblcontractor`
+--
+
+CREATE TABLE `tblcontractor` (
+  `contractor_name` text NOT NULL,
+  `bw_reg` int(11) NOT NULL,
+  `bw_category` text NOT NULL,
+  `bw_date` text NOT NULL,
+  `rw_reg` int(11) NOT NULL,
+  `rw_category` text NOT NULL,
+  `rw_date` text NOT NULL,
+  `ww_reg` int(11) NOT NULL,
+  `ww_category` text NOT NULL,
+  `ww_date` text NOT NULL,
+  `ees_reg` int(11) NOT NULL,
+  `ees_category` text NOT NULL,
+  `ees_date` text NOT NULL,
+  `mes_reg` int(11) NOT NULL,
+  `mes_category` text NOT NULL,
+  `mes_date` int(11) NOT NULL,
+  `phone` text NOT NULL,
+  `email` text NOT NULL,
+  `comments` text NOT NULL,
+  `status` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblgeneral`
+--
+
+CREATE TABLE `tblgeneral` (
+  `issue_name` text NOT NULL,
+  `center` text NOT NULL,
+  `comments` text NOT NULL,
+  `phone` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblmafundi`
+--
+
+CREATE TABLE `tblmafundi` (
+  `first_name` text NOT NULL,
+  `last_name` text NOT NULL,
+  `id_number` int(11) NOT NULL,
+  `phone` text NOT NULL,
+  `town` text NOT NULL,
+  `trade_type` text NOT NULL,
+  `comments` text NOT NULL,
+  `status` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblprojects`
+--
+
+CREATE TABLE `tblprojects` (
+  `project_name` text NOT NULL,
+  `project_id` text NOT NULL,
+  `developer_name` text NOT NULL,
+  `contractor_reg` text NOT NULL,
+  `start_date` text NOT NULL,
+  `phone` text NOT NULL,
+  `email` text NOT NULL,
+  `comment` text NOT NULL,
+  `project_type` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `user_id` int(11) NOT NULL,
+  `first_name` text(11) NOT NULL,
+  `last_name` text(11) NOT NULL,
+  `payroll_no` text(11) NOT NULL,
+  `region` text(11) NOT NULL,
+  `role` text(11) NOT NULL,
+  `password` text(11) NOT NULL,
+  `confirm_password` text(11) NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
