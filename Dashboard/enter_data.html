@@ -1,3 +1,8 @@
+<!--Template Name: portal-login-form 
+File Name: general_equiries.html
+Author Name: Achemoss
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -69,7 +74,7 @@
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
 
-                                            <a class="nav-link" href="enter_data.html">Enter data</a>
+                                            <a class="nav-link" href="enter_data.html">General Enquiries</a>
 
                                         </nav>
                                     </div>
@@ -82,6 +87,27 @@
                                 Huduma services
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
+							<!-- side menu-->
+							<div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Services
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+
+                                            <a class="nav-link" href="contractor.html">Contractor details</a>
+                                            <a class="nav-link" href="projects.html">Projects</a>
+                                            <a class="nav-link" href="mafundi.html">Site supervisor and Skilled workers</a>
+                                            <a class="nav-link" href="enter_data.html">General Enquiries</a>
+                                            <!--<a class="nav-link" href="reports.html">Reports</a> -->
+
+										</nav>
+									</div>
+								</nav>	
+							</div>
+							<!-- side menu-->
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Reports
@@ -102,7 +128,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Enter Data</h1>
+                        <h1 class="mt-4">General Enquiries</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
@@ -112,73 +138,61 @@
     <div class=" row mb-3">
       <div class="col-md-6">
           <div class="form-floating mb-3 mb-md-0">
-
-            <input type="number" class="form-control" id="contractorRegistration" aria-describedby="emailHelp" placeholder="Contractor Registration"/>
-            <label for="contractorRegistration" class="required">Contractor registration</label>
+            <input type="text" class="form-control" id="generalEnquiry" placeholder="Enquiry">
+            <label for="generalenquriesC" class="required">Enquiries</label>
         </div >
       </div>
-
       <div class="col-md-6">
           <div class="form-floating">
-            <input type="number" class="form-control" id="contractorRenewal" aria-describedby="emailHelp" placeholder="Contractor Renewal">
-            <label for="contractorRenewal" class="required">Contractor Renewal</label>
+            <select name="status" id="status" required="">
+                     <option value="0">Select category Type...</option>
+                     <option value="Project">Project</option>
+                     <option value="Contractor">Contractor</option>
+                     <option value="Training">Training</option>
+                     <option value="Supervisor">Site Supervisor</option>
+                     <option value="Mafundi">Skilled Workers</option>
+                     <option value="Others">Others</option>
+          </select>
           </div>
       </div>
   </div>
-
 <div class=" row mb-3">
   <div class="col-md-6">
     <div class="form-floating mb-3 mb-md-0">
-      <input type="number" class="form-control" id="projectRegistration" aria-describedby="emailHelp" placeholder="Project Registration">
-      <label for="projectRegistration" class="required">Project Registration</label>
+        <input type="text" class="form-control" id="trackinno" aria-describedby="emailHelp" placeholder="geComments"/>
+        <label for="generalenquriesC" class="required">Tracking No. </label>
     </div>
   </div>
   <div class="col-md-6">
     <div class="form-floating mb-3 mb-md-0">
-      <input type="number" class="form-control" id="siteSupervisor" aria-describedby="emailHelp" placeholder="Site Supervisor">
-      <label for="siteSupervisor" class="required">Site Supervisor</label>
+        <input type="text" class="form-control" id="phonenum" aria-describedby="emailHelp" placeholder="geComments"/>
+        <label for="generalenquriesC" class="required">Phone Number</label>
     </div>
   </div>
 </div>
-
 <div class=" row mb-3">
-  <div class="col-md-6">
-    <div class="form-floating mb-3 mb-md-0">
-      <input type="number" class="form-control" id="skilledWorker" aria-describedby="emailHelp" placeholder="Skilled Worker">
-      <label for="skilledWorker" class="required">Skilled Worker</label>
+    <div class="col-md-6">
+      <div class="form-floating mb-3 mb-md-0">
+          <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="geComments"/>
+          <label for="generalenquriesC" class="required">Email </label>
+      </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <div class="form-floating mb-3 mb-md-0">
-      <input type="number" class="form-control" id="generalEnquiry" placeholder="General Enquiry">
-      <label for="generalEnquiry">General Enquiry</label>
+    <div class="col-md-6">
+      <div class="form-floating mb-3 mb-md-0">
+          <input type="text" class="form-control" id="comments" aria-describedby="emailHelp" placeholder="geComments"/>
+          <label for="generalenquriesC" class="required">Comments*</label>
+      </div>
     </div>
+    <div class="col-md-3">
+        <h6>Application Date</h6>
+          <div class="form-floating mb-3 mb-md-0">
+            <input type="date" class="form-control" id="appdate" required>
+          </div>
+      </div>
   </div>
-</div>
-
-
-<div class=" row mb-3">
-  <div class="col-md-6">
-    <div class="form-floating mb-3 mb-md-0">
-      <label for="uploadFile"></label>
-      <input type="file" class="form-control" id="uploadFile" name="filename">
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="form-floating mb-3 mb-md-0">
-      <label for="dataEntryDate" class="required"></label>
-      <input type="date" class="form-control" id="dataEntryDate">
-    </div>
-  </div>
-</div>
-
-
-<button type="submit" class="btn btn-primary">Submit</button>
+<button type="save" class="btn btn-primary">Save</button>
 </form>
                         </div>
-
-
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
