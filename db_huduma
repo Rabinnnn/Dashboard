@@ -41,7 +41,7 @@ CREATE TABLE `tblcontractor` (
   `ees_reg` int(11) NOT NULL,
   `ees_category` text NOT NULL,
   `ees_date` text NOT NULL,
-  `mes_reg` int(11) NOT NULL,
+  `mes_reg` int(11) NOT NULL,21
   `mes_category` text NOT NULL,
   `mes_date` int(11) NOT NULL,
   `phone` text NOT NULL,
@@ -96,10 +96,28 @@ CREATE TABLE `tblprojects` (
   `email` text NOT NULL,
   `comment` text NOT NULL,
   `project_type` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;10
 
 -- --------------------------------------------------------
 
+
+--
+-- Table structure for table `tblenquiries`
+--
+
+CREATE TABLE `tblprojects` (
+ 
+  `enquiry_id` text NOT NULL,
+  `enquiry` text NOT NULL,
+  `enquriy_type` text NOT NULL,
+  `enquiry_trackno` text NOT NULL,
+  `application_date` text NOT NULL,
+  `phone` text NOT NULL,
+  `email` text NOT NULL,
+  `comment` text NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;10
+
+-- --------------------------------------------------------
 --
 -- Table structure for table `user`
 --
