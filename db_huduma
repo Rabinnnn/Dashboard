@@ -50,18 +50,6 @@ CREATE TABLE `tblcontractor` (
   `status` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `tblgeneral`
---
-
-CREATE TABLE `tblgeneral` (
-  `issue_name` text NOT NULL,
-  `center` text NOT NULL,
-  `comments` text NOT NULL,
-  `phone` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -105,7 +93,7 @@ CREATE TABLE `tblprojects` (
 -- Table structure for table `tblenquiries`
 --
 
-CREATE TABLE `tblprojects` (
+CREATE TABLE `tblenquiries` (
  
   `enquiry_id` text NOT NULL,
   `enquiry` text NOT NULL,
