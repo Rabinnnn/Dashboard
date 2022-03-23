@@ -131,6 +131,7 @@ CREATE TABLE `user` (
   `role` text(11) NOT NULL,
   `password` text(11) NOT NULL,
   `confirm_password` text(11) NOT NULL,
+  `activate` text(11) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
