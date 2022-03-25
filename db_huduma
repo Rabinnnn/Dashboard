@@ -116,6 +116,7 @@ CREATE TABLE `user` (
   `last_name` text(11) NOT NULL,
   `payroll_no` text(11) NOT NULL,
   `region` text(11) NOT NULL,
+  `email` text(11) NOT NULL,
   `role` text(11) NOT NULL,
   `password` text(11) NOT NULL,
   `confirm_password` text(11) NOT NULL,
